@@ -4,7 +4,7 @@ This project is a TypeScript version of https://github.com/joeldenning/vite-sing
 
 ## Local dev
 
-1. Follow the instructions at https://github.com/YHhaoareyou/vite-single-spa-ts-vue-example to run the vite application locally.
+1. Follow the instructions at https://github.com/YHhaoareyou/vite-single-spa-ts-vue-example to run the Vue vite application locally, as well as https://github.com/YHhaoareyou/vite-single-spa-ts-react-example to run the React vite application locally
 2. Run the following commands in this root config project
 
 ```
