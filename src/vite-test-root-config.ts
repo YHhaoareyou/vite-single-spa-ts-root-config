@@ -1,21 +1,26 @@
 import { registerApplication, start } from "single-spa";
 
 registerApplication({
-  name: "@org/vite-example",
+  name: "vite-single-spa-ts-vue-example",
   app: () =>
     import(
       /* webpackIgnore: true */
       // @ts-ignore
       "http://localhost:3000/src/main"
     ),
-  activeWhen: ["/", "/vue"],
+  activeWhen: ["/vue"],
 });
 
-// registerApplication({
-//   name: "@vite-test/navbar",
-//   app: () => System.import("@vite-test/navbar"),
-//   activeWhen: ["/"]
-// });
+registerApplication({
+  name: "vite-single-spa-ts-react-example",
+  app: () =>
+    import(
+      /* webpackIgnore: true */
+      // @ts-ignore
+      "http://localhost:3001/src/main"
+    ),
+  activeWhen: ["/", "/react"],
+});
 
 start({
   urlRerouteOnly: true,
