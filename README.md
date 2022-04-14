@@ -1,6 +1,6 @@
 # vite-single-spa-ts-root-config
 
-This project is a TypeScript version of https://github.com/joeldenning/vite-single-spa-root-config
+This project refers to https://github.com/joeldenning/vite-single-spa-root-config , but written in TypeScript.
 
 ## Local dev
 
