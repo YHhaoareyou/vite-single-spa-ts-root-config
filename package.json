@@ -2,7 +2,7 @@
   "name": "@vite-single-spa/root-config",
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "dev": "vite --port 9000",
+    "dev": "vite --port 3000",
     "build": "vite build",
     "preview": "vite preview --port 9000"
   },
