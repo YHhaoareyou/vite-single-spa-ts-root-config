@@ -3,8 +3,9 @@
 This is the Root-config of an example micro-frontends project with Vite and single-spa implemented together.
 Instead of Webpack, this project uses Vite & TypeScript for each micro-frontends app and even the root-config.
 
-The example of a React micro-frontends app in this project: https://github.com/YHhaoareyou/vite-single-spa-ts-react-example
-The example of a Vue micro-frontends app in this project: https://github.com/YHhaoareyou/vite-single-spa-ts-vue-example
+The examples of other micro-frontends app in the same project:
+* React: https://github.com/YHhaoareyou/vite-single-spa-ts-react-example
+* Vue: https://github.com/YHhaoareyou/vite-single-spa-ts-vue-example
 
 This project originally refers to the great work of https://github.com/joeldenning/vite-single-spa-root-config .
 
@@ -20,10 +21,15 @@ Please forgive us if there are any redundant configurations in this example, and
 
 We hope this example would help anyone who are facing similar problems & make contributions to the developer communities of both single-spa and Vite!
 
-# How?
+## How?
 
 Vite on development doesn't interop with SystemJS, which is used by single-spa as the default build tool.
 In order to make Vite interop with single-spa in both development and production environment, this project adopts [es-module-shims](https://github.com/guybedford/es-module-shims) and adjusts the configuration on the paths to styles and public assets of each app.
+
+## Special thanks
+
+* [@AustinZhu](https://github.com/AustinZhu) for helping me with the configurations
+* [@filoxo](https://github.com/filoxo) for sharing problems and ideas about the interop issue [here](https://github.com/single-spa/single-spa.js.org/issues/538)
 
 ## Getting started
 
@@ -37,6 +43,7 @@ pnpm run dev
 open http://localhost:3000
 ```
 These commands install packages and run this project for your local development.
+
 3. Enjoy! Navigate by the top nav bar, or access http://localhost:3000/vue for the Vue app, as well as http://localhost:3000/react for the React one.
 
 ### Production (preview on local)
@@ -50,6 +57,7 @@ pnpm run preview
 open http://localhost:9000
 ```
 These commands install packages, build this project, and run the built files for you to preview on your local environment.
+
 3. Enjoy! Navigate by the top nav bar, or access http://localhost:9000/vue for the Vue app, as well as http://localhost:9000/react for the React one.
 
 ### Before deployment
@@ -130,8 +138,3 @@ with:
 <script type="module-shim" src="/vite-single-spa-root-config.<%= isLocal ? 'ts' : 'js' %>"></script>
 ```
 4. Check the console of the browser and add necessary configurations in the Content-Security-Policy tag.
-
-## Special thanks
-
-@AustinZhu for helping me with the configurations
-@filoxo for sharing problems and ideas about the interop issue [here](https://github.com/single-spa/single-spa.js.org/issues/538)
