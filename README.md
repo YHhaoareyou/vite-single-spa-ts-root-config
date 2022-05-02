@@ -21,7 +21,7 @@ Please forgive us if there are any redundant configurations in this example, and
 
 We hope this example would help anyone who are facing similar problems & make contributions to the developer communities of both single-spa and Vite!
 
-*Here is the branch of the webpack-to-vite migration of the project we are actually working on: https://github.com/wasedatime/wasedatime-web/tree/feature/vite*
+*PS. Here is the branch of the webpack-to-vite migration of the project we are actually working on: https://github.com/wasedatime/wasedatime-web/tree/feature/vite*
 
 ## How?
 
